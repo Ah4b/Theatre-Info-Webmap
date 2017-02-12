@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Theater Info</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://wiki.openstreetmap.org/w/images/archive/e/eb/20161207170002%21Theatre-16.svg" />
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>
+</head>
+
+<body>
+    <div id='bgDiv' class='container'>
+        <h3>Theater Info</h3>
+        <p id='generalInfoP'>Source: <a target='blank' href="https://www.openstreetmap.org/about">OpenStreetMap</a>, Amenity: <a target='blank' href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity%3Dtheatre">Theater</a></p>
+        <div id="mapDiv"></div>
+        <div id='popupDiv'>
+            <a href="#" id="popupCloser"></a>
+            <div id="popupContent"></div>
+        </div>
+
+        <div id="infoDiv">
+            <p id='nameP'></p>
+            <p id='infoP'></p>
+            <div id='imageDiv'></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
